@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+.custom-margin{
+  margin-top: 100px;
+  margin-bottom: 130px;
+}
+.custom-carousel-cover img{
+  height: 650px;
+  object-fit: cover;
+  object-position: top;
+}
+.custom-overly{
+  background: linear-gradient(180deg, hsla(0, 0%, 0%, 0.3), hsla(0, 0%, 0%, 0.8));
+  z-index: 50;
+}
+.custom-carousel-control{
+  z-index: 100;
+}
+
+
+
+
