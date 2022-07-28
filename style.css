@@ -19,5 +19,8 @@ p{
 .custom-carousel-control{
   z-index: 100;
 }
+.custom-text-justify{
+  text-align: justify;
+}
 
 
