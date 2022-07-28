@@ -3,6 +3,9 @@
 body{
   font-family: 'Poppins', sans-serif;
 }
+p{
+  color: #777777;
+}
 
 .custom-carousel-cover img{
   height: 40.625rem;
