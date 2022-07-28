@@ -19,7 +19,7 @@
       <nav class="navbar navbar-expand-lg bg-white fixed-top shadow">
         <div class="container">
           <a class="navbar-brand fs-2 fw-bold text-secondary" href="#">eTeaching</a>
-          <a class="btn btn-outline-primary ms-auto me-4 d-inline-block d-lg-none rounded-0" href=""><i class="fa-regular fa-user me-1"></i>Register</a>
+          <a class="btn btn-outline-primary ms-auto me-4 d-inline-block d-lg-none rounded-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"><i class="fa-regular fa-user me-1"></i>Register</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -55,7 +55,7 @@
               </li>
             </ul>
           </div>
-          <a class="btn btn-primary ms-4 d-lg-inline-block d-none rounded-0" href=""><i class="fa-regular fa-user me-1"></i>Register</a>
+          <a class="btn btn-primary ms-4 d-lg-inline-block d-none rounded-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"><i class="fa-regular fa-user me-1"></i>Register</a>
         </div>
       </nav>
       <!-- END Navbar -->
@@ -101,7 +101,7 @@
                 <div class="carousel-caption custom-caption">
                   <h5 class="display-3 fw-bold text-capitalize">Gets Learn without limits</h5>
                   <p class="fs-5">Start, switch, or advance your career with more than 3,000 courses, Professional Certificates world-class universities and companies</p>
-                  <a class="btn btn-primary rounded-2 fs-5" href="">Get Started</a>
+                  <a class="btn btn-primary rounded-2 fs-5" href="#discoverCards">Get Started</a>
                 </div>
               </div>
               </div>
@@ -329,12 +329,75 @@
               <p class="w-75 m-auto m-lg-0 text-white">We offer world best courses those can be accessed from anywhere, anytime. Join and happily enroll and be a HERO!</p>
             </div>
             <div class="joining-button mt-4 mt-lg-0">
-              <a class="btn btn-light text-primary fw-semibold rounded-2 fs-5" href="#discoverCards">Register Now</a>
+              <a class="btn btn-light text-primary fw-semibold rounded-2 fs-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">Register Now</a>
             </div>
           </div>
         </div>
       </section>
       <!-- END Joining -->
+
+
+      <!---------------------- 
+      Modal: Registration Form 
+      ----------------------->
+      <section>
+        <div class="custom-modal-area">
+          <!-- Modal #1 Registration -->
+          <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <h5 class="modal-title fw-bold" id="staticBackdropLabel">Register and start Learning</h5>
+                  <form class="mt-4 mb-5">
+                    <p><input class="form-control rounded-0" type="text" name="name" placeholder="Full Name" required></p>
+                    <p><input class="form-control rounded-0" type="email" name="email" placeholder="Valid Email" required></p>
+                    <p><input class="form-control rounded-0" type="password" name="Password" placeholder="Password" required></p>
+                    <div class="mb-3">
+                      <input class="me-2" type="checkbox" name="terms" id="terms" required>
+                      <label for="terms">Do you agree with our <a href="">Terms & Condition</a>?</label>
+                    </div>
+                    <input class="btn btn-primary form-control fw-semibold rounded-0" type="submit" value="Sign Up">
+                  </form>
+                  <p class="text-start">Already have an account?<a class="btn btn-outline-primary fw-bold ms-3 rounded-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">Log In</a></p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary fw-semibold rounded-0" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal #2 Log In -->
+          <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <h5 class="modal-title fw-bold" id="staticBackdropLabel">Log In to Your Account!</h5>
+                  <form class="mt-4 mb-5">
+                    <div>
+                      <a class="form-control border-0 rounded-0 shadow mb-3 text-decoration-none text-black" href=""><i class="fa-brands fa-facebook fs-5 me-2" style="color: #1773EA;"></i>Continue with Facebook</a>
+                      <a class="form-control border-0 rounded-0 shadow mb-3 text-decoration-none text-black" href=""><i class="fa-brands fa-google fs-5 me-2" style="color: #CA4538;"></i>Continue with Google</a>
+                      <a class="form-control border-0 rounded-0 shadow mb-3 text-decoration-none text-black" href=""><i class="fa-brands fa-apple fs-5 me-2"></i>Continue with Apple</a>
+                    </div>
+                    <div>
+                      <p><input class="form-control rounded-0" type="email" name="email" placeholder="Valid Email" required></p>
+                      <p><input class="form-control rounded-0" type="password" name="Password" placeholder="Password" required></p>
+                    </div>
+                    <input class="btn btn-primary form-control fw-semibold rounded-0" type="submit" value="Log In">
+
+                    <small class="mt-4 d-block text-center">or<a href="" class="ms-2">Forgot Password?</a></small>
+                  </form>
+                  <p class="text-start">Don't have an account?<a class="btn btn-outline-primary fw-bold ms-3 rounded-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">Register Now</a></p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary fw-semibold rounded-0" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <!-- END Modal -->
 
 
       <!------------------------ 
@@ -497,10 +560,11 @@
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <p>Flexbox follows One-dimensional system, at a time only row or column, whereas, Grid follows Bi-dimensional system, row and column at the same time.</p>
-                    <p>For designing complex layout, Grid can be the more preferable layout rather than Flexbox. Because Flexbox is used for quick solution in two columns layout.</p>
-                    <p>Grid is better for Responsive layout designing, because, it focuses on layout first where each item can be positioned anywhere in a grid cell and a column or row can be spanned as required. Flexbox, on the other hand, is not much good enough for Responsive, by the reason of, it focuses on content first where content can be justified or aligned and a column or row cannot be spanned.</p>
-                  </div>
+                    <ul>
+                      <li><p>Flexbox follows One-dimensional system, at a time only row or column, whereas, Grid follows Bi-dimensional system, row and column at the same time.</p></li>
+                      <li><p>For designing complex layout, Grid can be the more preferable layout rather than Flexbox. Because Flexbox is used for quick solution in two columns layout.</p></li>
+                      <li><p>Grid is better for Responsive layout designing, because, it focuses on layout first where each item can be positioned anywhere in a grid cell and a column or row can be spanned as required. Flexbox, on the other hand, is not much good enough for Responsive, by the reason of, it focuses on content first where content can be justified or aligned and a column or row cannot be spanned.</p></li>
+                    </ul>
                 </div>
               </div>
               <!-- FAQ #2 -->
@@ -512,9 +576,11 @@
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <p>TailwindCSS is utility-first CSS framework for fast UI development, whereas, Bootstrap is for building responsive, mobile-first projects on the web.</p>
-                    <p>Websites created using TailwindCSS are much more customizable and can be built a site from scratch. Besides, Bootstrap is UI kit and has pre-designed components and themes for quick designing.</p>
-                    <p>A site created using TailwindCSS, more lighter because of its utility-first choice and can be switched in any designing layout. Meanwhile, more code needs to be added to get full benefit by customizing a Bootstrap based website that makes the site more heavy.</p>
+                    <ul>
+                      <li><p>TailwindCSS is utility-first CSS framework for fast UI development, whereas, Bootstrap is for building responsive, mobile-first projects on the web.</p></li>
+                      <li><p>Websites created using TailwindCSS are much more customizable and can be built a site from scratch. Besides, Bootstrap is UI kit and has pre-designed components and themes for quick designing.</p></li>
+                      <li><p>A site created using TailwindCSS, more lighter because of its utility-first choice and can be switched in any designing layout. Meanwhile, more code needs to be added to get full benefit by customizing a Bootstrap based website that makes the site more heavy.</p></li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -527,14 +593,16 @@
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <p>CSS box model consists of Component width & height, Padding, Border and, Margin from inside to out side.</p>
-                    <p>
-                      <b>Equation of measuring the area of a Element:</b>
-                      <br>
-                      <small>Total Width: <i>component's width + padding (left & right) + border(left & right) + margin (left & right)</i></small>
-                      <br>
-                      <small>Total Height: <i>component's height + padding (top & bottom) + border(top & bottomt) + margin (top & bottom)</i></small>
-                    </p>
+                    <ul>
+                      <li><p>CSS box model consists of Component width & height, Padding, Border and, Margin from inside to out side.</p></li>
+                      <li><p>
+                        <b>Equation of measuring the area of a Element:</b>
+                        <br>
+                        <small>Total Width: <i>component's width + padding (left & right) + border(left & right) + margin (left & right)</i></small>
+                        <br>
+                        <small>Total Height: <i>component's height + padding (top & bottom) + border(top & bottomt) + margin (top & bottom)</i></small>
+                      </p></li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -547,9 +615,11 @@
                 </h2>
                 <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <p>The HTML semantics refers to the tags that provide meaning to an HTML page rather than just presentation.</p>
-                    <p>Semantic tags are better for Search Engine Optimization (SEO) and also it offers a clear reading as well as better user experience.</p>
-                    <p>Semantic Tags such as, <code>header, nav, main, section, aside, article,footer</code> and so on.</p>
+                    <ul>
+                      <li><p>The HTML semantics refers to the tags that provide meaning to an HTML page rather than just presentation.</p></li>
+                      <li><p>Semantic tags are better for Search Engine Optimization (SEO) and also it offers a clear reading as well as better user experience.</p></li>
+                      <li><p>Semantic Tags such as, <code>header, nav, main, section, aside, article,footer</code> and so on.</p></li>
+                    </ul>
                   </div>
                 </div>
               </div>
