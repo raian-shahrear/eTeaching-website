@@ -26,6 +26,22 @@ p{
   background: #161616;
 }
 
+.custom-social-icon a .fa-twitter{
+  color: #1DA1F2;
+}
+.custom-social-icon a .fa-facebook-f{
+  color: #1773EA;
+}
+.custom-social-icon a .fa-linkedin-in{
+  color: #3C97C6;
+}
+.custom-social-icon a .fa-youtube{
+  color: #FE0000;
+}
+.custom-social-icon a i:hover{
+  color: #FFFFFF;
+}
+
 
 
 /* Large Screen */
