@@ -24,3 +24,11 @@ p{
 }
 
 
+
+/* Large Screen */
+@media only screen and (min-width: 992px) {
+  .customize-w-75{
+    width: 75%;
+    margin: 0 auto;
+  }
+}
