@@ -19,13 +19,32 @@ p{
 .custom-carousel-control{
   z-index: 100;
 }
-.custom-text-justify{
-  text-align: justify;
+.custom-section-mb-130{
+  margin-bottom: 8.125rem;
+}
+.custom-img-to-cover img{
+  object-fit: cover; 
+  object-position: center;
 }
 .custom-footer-bg{
   background: #161616;
 }
-
+.custom-terms a{
+  text-decoration: none;
+}
+.custom-terms a:hover{
+  text-decoration: underline;
+}
+.custom-social-icon a{
+  border-radius: 50%; 
+  background: #242424;
+}
+.custom-social-icon a .fa-facebook{
+  color: #1773EA;
+}
+.custom-social-icon a .fa-google{
+  color: #CA4538;
+}
 .custom-social-icon a .fa-twitter{
   color: #1DA1F2;
 }
@@ -41,6 +60,9 @@ p{
 .custom-social-icon a i:hover{
   color: #FFFFFF;
 }
+
+
+
 
 
 
